@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: 20px;
+}
+
+.header-logo {
+	padding: 10px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-img {
+	box-shadow: 2px 2px 2px 2px rgb(156, 156, 156);
+}
+
+main {
+	display: flex;
+	height: 100%;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	width: 25%;
+	overflow-y: auto;
+	max-height: 100%;
+	border-right: solid 2px silver;
+}
+
+.space {
+	border-radius: 15px;
+	min-height: 100px;
+	margin: 15px;
+	box-shadow: 1px 1px 1px 1px silver;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.space:hover {
+	box-shadow: 2px 2px 2px 2px silver;
+}
+
+.content {
+	float: right;
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.notes-area:first-child {
+	margin-top: 30px;
+}
+
+.note {
+	word-break: break-all;
+	border-radius: 10px;
+	min-width: 70%;
+	max-width: 70%;
+	height: auto;
+	padding: 10px;
+	margin: 10px 0;
+
+	border: solid 2px silver;
+	font-size: 20px;
+
+	color: black
+}
+
+.note:hover {
+	box-shadow: 0px 2px 4px 3px silver;
+}
+
+.notes-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 70%;
+	max-width: 70%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.popUpBtn {
+	padding: 10px 0;
+	border-radius: 10px;
+
+	width: 50%;
+	top: 0;
+	right: 0;
+
+	background: none;
+	border: solid 1px rgb(87, 143, 216);
+
+	font-size: larger;
+	font-weight: 600;
+
+}
+
+.popUpBtn:hover {
+	box-shadow: 2px 2px 2px 2px silver;
+}
+
+.new-note__container {
+	position: absolute;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.new-note {
+	background-color: crimson;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.popUp {
+	display: none;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 40%;
+
+	padding: 3rem;
+	background-color: rgb(223, 223, 223);
+	position: relative;
+	border-radius: 5px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px 2px silver;
+}
+
+
+.inputNote {
+	border-radius: 10px;
+	padding: 15px;
+
+
+}
+
+.holder {
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+.createNoteBtn {
+	margin: 10px 5px 5px 0;
+	border-radius: 15px;
+	padding: 15px;
+	font-weight: 600;
+	font-size: large;
+	background-color: rgb(255, 255, 255);
+	width: 90%;
+
+}
+
+.createNoteBtn:hover {
+	background-color: rgb(178, 178, 178);
+
+
+}
+
+.closeFormBtn {
+	padding: 30px;
+	border-radius: 10px;
+
+	margin: 10px 0 5px 5px;
+
+	background-image: url('/img/bin.png');
+	background-size: 70%;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+
+	width: 10%;
+
+}
+
+.closeFormBtn:hover {
+	background-image: url('/img/disposal.png');
+	background-size: 75%;
+
+}
+
+.active {
+	display: block;
+}
+
+.holder-title {
+	font-size: 25px;
+	font-weight: 300;
+}
+
+
+.popUpBtns {
+	display: flex;
+}
